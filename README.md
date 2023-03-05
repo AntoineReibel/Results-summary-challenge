@@ -7,6 +7,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ## Overview
 
 Second challenge i did and this one took me pretty long !
-I satisfied of how i used javascript.
+I'm satisfied of how i used javascript.
 However i don't like the mobile version and the shadows.
-I reamly not satisfied od my use of the position to match the model, and i'm sure there is a much easier solution.
+I really not satisfied of my use of the position to match the model, and i'm sure there is a much easier solution.
