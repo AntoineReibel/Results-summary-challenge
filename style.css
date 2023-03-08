@@ -6,7 +6,6 @@ body {
     background-color: white;
     font-family: 'Hanken Grotesk', sans-serif;
     min-height: 100vh;
-    width: auto;
     font-size: 1.1rem;
     font-weight: 500;
     overflow: hidden;
@@ -14,10 +13,8 @@ body {
 
 section {
     display: flex;
-    /* width: 26.25rem; */
-    /* height: 23.125rem; */
-    position: relative;
-    right: 0.75rem
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5%;
 }
 
 .cardBlue {
@@ -28,14 +25,10 @@ section {
     text-align: center;
     width: 15rem;
     height: 23.125rem;
-    /* min-width: 50%; */
     background: rgb(102, 68, 252);
     background: linear-gradient(180deg, rgba(102, 68, 252, 1) 0%, rgba(50, 46, 214, 1) 100%);
     padding: 2.188rem;
     border-radius: 5%;
-    position: relative;
-    left: 0.75rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .cardBlueResult {
@@ -57,11 +50,10 @@ section {
     background-color: green;
     width: 15rem;
     height: 23.125rem;
-    /* min-width: 50%; */
-    padding: 2.188rem 2.188rem 2.188rem 2.938rem;
+    padding: 2.188rem;
     border-radius: 0% 5% 5% 0%;
     background-color: white;
-    box-shadow: rgba(149, 157, 165, 0.2)3px 3px 2.6px;
+
 }
 
 .categories {
@@ -79,9 +71,7 @@ section {
     height: 18%;
     border-radius: 0.625rem;
     padding: 0% 5% 0% 5%;
-
 }
-
 
 .categoryDiv {
     display: flex;
@@ -131,7 +121,6 @@ button {
     border-radius: 1.563rem;
     margin-top: 1.563rem;
     background-color: hsl(224, 30%, 27%);
-
 }
 
 .whiteFont {
@@ -164,9 +153,8 @@ button {
 
 .attribution {
     font-size: 11px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    margin-top: 20px;
+    align-self: self-end;
 }
 
 .attribution a {
@@ -176,12 +164,13 @@ button {
 @media screen and (max-width: 600px) {
     body {
         overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-x: hidden
     }
 
     section {
         flex-direction: column;
-        position: unset;
+        box-shadow: none;
+
     }
 
     .cardBlue,
@@ -189,9 +178,8 @@ button {
         box-shadow: none;
     }
 
-    .attribution{
-        position: unset;
-        text-align: center;
+    .attribution {
+        align-self: center;
         margin-top: 15px;
     }
 }
